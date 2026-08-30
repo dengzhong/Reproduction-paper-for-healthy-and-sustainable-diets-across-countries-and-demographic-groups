@@ -8,7 +8,7 @@ Zhongci Deng<sup>1</sup>, Zhen Wang<sup>1,2,\*</sup>, Yuanchao Hu<sup>3</sup>, P
 
 <sup>1</sup> College of Resources and Environment, Huazhong Agricultural University, Wuhan 4300770, China\
 <sup>2</sup> Interdisciplinary Research Center for Territorial Spatial Governance and Green Development, Huazhong Agricultural University, Wuhan 430070, China\
-<sup>3</sup> School of Resources and Environmental Sciences, Wuhan University, Wuhan 430079, China\
+<sup>3</sup> School of Ecology, Environment & Resources, Guangdong University of Technology; Guangzhou 510006, China\
 <sup>4</sup> Department of Geography, The University of Hong Kong, Hong Kong, China\
 <sup>5</sup> School of Life and Environmental Sciences, Deakin University, Melbourne, Vic, Australia
 
