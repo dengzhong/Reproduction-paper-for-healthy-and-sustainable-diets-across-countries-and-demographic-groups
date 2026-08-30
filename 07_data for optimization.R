@@ -174,7 +174,7 @@ data_list$waste <- read_excel(
   wide_to_long()
 
 data_list$Price <- read_excel(
-  file.path(output_dir, "Price_FAO.xlsx")
+  file.path(output_dir, "Price_FAO_fake.xlsx")
 ) |>
   wide_to_long()
 
