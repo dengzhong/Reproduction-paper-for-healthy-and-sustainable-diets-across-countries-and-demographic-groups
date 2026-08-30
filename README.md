@@ -55,7 +55,7 @@ The seven single-objective models in Step 08.1 may be run independently. All oth
 - [Troubleshooting](#troubleshooting)
 - [References](#references)
 
-## Data availability and reproduction scope {#data-availability-and-reproduction-scope}
+## Data availability and reproduction scope
 
 The repository provides the FBS inputs, demographic data, nutrient coefficients, food-loss and waste factors, environmental intensities, health-model inputs, model code, processing scripts, and plotting code required by the workflow. The only restricted input is the unit price of each food in each country.
 
@@ -75,7 +75,7 @@ The replacement workbook must:
 - use the same country and food ordering defined by `Input data/Country.xlsx` and `Input data/Food.xlsx`;
 - contain unit prices expressed in the units expected by the optimization model.
 
-## Data sources and access {#data-sources-and-access}
+## Data sources and access
 
 The files distributed with this repository are fixed, model-ready versions of the source data. Public databases may be revised after download, so downloading the latest release will not necessarily reproduce the values in the supplied files. For exact reproduction, use the supplied inputs except for the restricted ICP price matrix, which must be obtained independently and prepared as described above.
 
@@ -103,7 +103,7 @@ The files distributed with this repository are fixed, model-ready versions of th
 - The exact ICP item-price data cannot be redistributed. Public ICP PPP tables are not a substitute for the detailed item-level national annual average prices required by this model.
 - Record the download date, database release, any access request identifier, currency conversion, price year, and every mapping decision when replacing or updating an external dataset.
 
-## Workflow overview {#workflow-overview}
+## Workflow overview
 
 The current repository contains 13 logical steps. Steps 03 and 08 are manual GAMS stages, while the other main steps are R scripts. For this reason, there is no `03_*.R` file or standalone `08_*.R` file in the project root. The health model is the final step and is implemented in `13_health_model.R`.
 
@@ -233,7 +233,7 @@ If the project is moved, update the following locations before running the workf
 - all global file paths at the beginning of `final output.gms`;
 - absolute paths in individual figure scripts, especially `fig1/Fig1.R` and `fig3/Fig3.R`.
 
-## Data conventions {#data-conventions}
+## Data conventions
 
 ### Country and food filters
 
@@ -262,7 +262,7 @@ The fixed age order is:
 - `Ori` or `Current diets`: original diets;
 - `New`, `Opt`, or `Optimized diets`: optimized diets.
 
-## Reproduction instructions {#reproduction-instructions}
+## Reproduction instructions
 
 All commands below start from the project root. File names containing spaces must be quoted.
 
@@ -302,7 +302,7 @@ Rscript "13_health_model.R"
 
 The seven `min*.gms` files are independent of one another. However, `combineScenarios_nutrient.gms` must be run only after all seven result GDX files have been created, and `final output.gms` must be run after the scenario-combination model finishes.
 
-## Workflow details {#workflow-details}
+## Workflow details
 
 ### Step 01 — Prepare the FBS inputs
 
@@ -664,7 +664,7 @@ Outputs in `Health model`:
 - `health_food_pif_step2.xlsx`;
 - `health_food_deaths_step3.xlsx`.
 
-## Figure-generation code {#figure-generation-code}
+## Figure-generation code
 
 The plotting workflows under `output data/fig` are downstream analyses. They do not alter the main optimization or health-model results. Run each plotting script from its own directory unless it explicitly resolves paths from the script location.
 
@@ -706,7 +706,7 @@ Important figure inputs:
 
 The `figs/figs2` and `figs/figs8` directories currently contain no executable R or GAMS plotting scripts; they contain existing figure or editing files only.
 
-## Required output checks {#required-output-checks}
+## Required output checks
 
 Before starting the next stage, confirm that the following files exist:
 
@@ -727,7 +727,7 @@ Before starting the next stage, confirm that the following files exist:
 | 12 | `00Intake_Ori.xlsx`, `00Intake_Opt.xlsx` | 13 |
 | 13 | `health_food_deaths_step3.xlsx` | Health-result figures |
 
-## Troubleshooting {#troubleshooting}
+## Troubleshooting
 
 ### GAMS cannot find food-proxy inputs
 
@@ -759,7 +759,7 @@ Before starting the next stage, confirm that the following files exist:
 
 An error such as `Can't find method for generic &(e1, e2)` normally indicates incompatible versions of `patchwork`, `ggplot2`, or one of their dependencies. Reinstall the packages and restart the R session before rerunning the figure script. This issue affects figure assembly only and does not affect the data-processing, optimization, or health-model results.
 
-## References {#references}
+## References
 
 1.  Global Dietary Database. *GDD 2018 estimates and data files*. Tufts University. <https://www.globaldietarydatabase.org/data-download> (accessed 5 August 2026).
 
