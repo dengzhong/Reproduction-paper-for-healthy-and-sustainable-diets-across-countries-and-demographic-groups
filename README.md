@@ -45,7 +45,6 @@ The seven single-objective models in Step 08.1 may be run independently. All oth
 - [Reproduction scope and data access](#data-availability-and-reproduction-scope)
 - [Data sources](#data-sources-and-access)
 - [Workflow overview](#workflow-overview)
-- [Main figures](#main-figures)
 - [Repository structure](#repository-structure)
 - [Software and path requirements](#software-requirements)
 - [Data conventions](#data-conventions)
@@ -141,31 +140,7 @@ The required execution order is:
 
 Step 06 depends on the FBS output from Step 01 but does not depend on Steps 03–05. It may therefore be prepared separately, provided it is completed before Step 07.
 
-## Main figures {#main-figures}
-
-The current Figure 1–5 exports are displayed below. Their source data and plotting scripts are stored under `output data/fig`.
-
-### Figure 1. Current and optimized dietary intake patterns
-
-![Figure 1](output%20data/fig/fig1/Fig1new.svg)
-
-### Figure 2. Economic implications of optimized diets
-
-![Figure 2](output%20data/fig/fig2/Fig2new.svg)
-
-### Figure 3. Environmental implications of optimized diets
-
-![Figure 3](output%20data/fig/fig3/Fig3new.svg)
-
-### Figure 4. Nutrient and food drivers of nutritional adequacy gains
-
-![Figure 4](output%20data/fig/fig4/Figure4_bc_submission_output/Figure4_bc_submission.png)
-
-### Figure 5. Estimated health effects of optimized diets
-
-![Figure 5](output%20data/fig/fig5/Fig5.svg)
-
-## Repository structure {#repository-structure}
+## Repository structure
 
 ``` text
 Code/
@@ -203,7 +178,7 @@ Code/
 └── Health model/                     # Health-model inputs and outputs
 ```
 
-## Software requirements {#software-requirements}
+## Software requirements
 
 ### R
 
