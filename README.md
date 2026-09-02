@@ -1,10 +1,10 @@
 # Reproduction package for “Achieving healthy and sustainable diets across countries and demographic groups requires profound dietary change and entails unequal costs”
 
-This repository is the reproduction package for the manuscript **“Achieving healthy and sustainable diets across countries and demographic groups requires profound dietary change and entails unequal costs.”** It contains the data-processing, optimization, health-impact, and figure-generation workflow used to construct nutritionally adequate diets by country, age group, and sex and to assess their economic, environmental, and health implications.
+This repository is the reproduction package for the manuscript **“Achieving healthy and sustainable diets across countries and demographic groups requires profound dietary change and unequal costs.”** It contains the data-processing, optimization, health-impact, and figure-generation workflow used to construct nutritionally adequate diets by country, age group, and sex and to assess their economic, environmental, and health implications.
 
 ## Authors and affiliations
 
-Zhongci Deng<sup>1</sup>, Zhen Wang<sup>1,2,\*</sup>, Yuanchao Hu<sup>3</sup>, Pan He<sup>4</sup>, and Brett A Bryan<sup>5</sup>
+Zhongci Deng<sup>1</sup>, Zhen Wang<sup>1,2,\*</sup>, Yuanchao Hu<sup>3</sup>, Pan He<sup>4</sup>, Michalis Hadjikakou<sup>5</sup>, and Brett A Bryan<sup>5</sup>
 
 <sup>1</sup> College of Resources and Environment, Huazhong Agricultural University, Wuhan, China\
 <sup>2</sup> Interdisciplinary Research Center for Territorial Spatial Governance and Green Development, Huazhong Agricultural University, Wuhan, China\
